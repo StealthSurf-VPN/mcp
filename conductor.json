@@ -1,0 +1,7 @@
+{
+	"scripts": {
+		"setup": "yarn; cp $CONDUCTOR_ROOT_PATH/.env .env",
+		"run": "yarn dev",
+		"build": "yarn build"
+	}
+}

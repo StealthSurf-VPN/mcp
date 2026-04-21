@@ -1,7 +1,7 @@
 # StealthSurf MCP Server
 
 MCP (Model Context Protocol) server for
-[StealthSurf VPN](https://stealthsurf.app) API.
+[StealthSurf VPN](https://stealthsurf.space) API.
 Allows AI agents (Claude Desktop, Cursor, etc.) to manage VPN configs,
 cloud servers, paid options, and more through natural language.
 
@@ -36,7 +36,7 @@ yarn build && yarn start
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `STEALTHSURF_API_URL` | `https://api.stealthsurf.app` | API base URL |
+| `STEALTHSURF_API_URL` | `https://api.stealthsurf.space` | API base URL |
 | `PORT` | `4500` | HTTP server port |
 
 ## MCP Client Configuration
@@ -49,7 +49,7 @@ Add to `~/.claude/settings.json`:
 {
   "mcpServers": {
     "stealthsurf": {
-      "url": "https://mcp.stealthsurf.app",
+      "url": "https://mcp.stealthsurf.space",
       "headers": {
         "Authorization": "Bearer stlth_your_api_key_here"
       }
@@ -201,6 +201,6 @@ Workflow templates that guide AI agents through multi-step scenarios.
 ```bash
 docker build -t stealthsurf-mcp .
 docker run -p 3000:3000 \
-  -e STEALTHSURF_API_URL=https://api.stealthsurf.app \
+  -e STEALTHSURF_API_URL=https://api.stealthsurf.space \
   stealthsurf-mcp
 ```
